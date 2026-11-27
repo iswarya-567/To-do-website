@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow | Smart To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="#" class="logo">✦ TaskFlow</a>
+        <span class="nav-tag">YOUR DAILY PLANNER</span>
+    </header>
+
+    <main class="container">
+
+        <section class="hero">
+            <div class="hero-content">
+                <p class="eyebrow">PLAN • FOCUS • ACHIEVE</p>
+                <h1>Make today<br><span>count.</span></h1>
+                <p class="hero-text">
+                    Organise your tasks, stay focused and make
+                    progress one step at a time.
+                </p>
+                <a href="#task-section" class="hero-button">Start planning ↗</a>
+            </div>
+
+            <div class="hero-image">
+                <img src="images/focus.gif" alt="Animated productivity illustration">
+            </div>
+        </section>
+
+        <section class="task-section" id="task-section">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">YOUR WORKSPACE</p>
+                    <h2>My Tasks <span>✦</span></h2>
+                    <p class="subheading">A little progress every day adds up.</p>
+                </div>
+                <div class="date-badge" id="today-date"></div>
+            </div>
+
+            <div class="todo-card">
+                <div class="card-top">
+                    <div>
+                        <h3>Daily Checklist</h3>
+                        <p>Keep your day organised.</p>
+                    </div>
+                    <div class="task-icon">✓</div>
+                </div>
+
+                <form id="todo-form" class="input-area">
+                    <input
+                        type="text"
+                        id="task-input"
+                        placeholder="What do you need to do?"
+                        autocomplete="off"
+                    >
+                    <button type="submit">+ Add Task</button>
+                </form>
+
+                <div class="progress-area">
+                    <div class="progress-label">
+                        <span>Today's progress</span>
+                        <span id="progress-text">0% completed</span>
+                    </div>
+                    <div class="progress-track">
+                        <div class="progress-fill" id="progress-fill"></div>
+                    </div>
+                </div>
+
+                <div class="task-list" id="task-list"></div>
+
+                <p class="empty-message" id="empty-message">
+                    ✨ Your task list is clear. Add a task to get started!
+                </p>
+
+                <div class="card-footer">
+                    <span id="task-count">0 tasks</span>
+                    <button type="button" id="clear-completed">
+                        Clear completed
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="quote-section">
+            <img src="images/workspace.jpg" alt="A calm workspace">
+            <div>
+                <p class="eyebrow">A DAILY REMINDER</p>
+                <h3>Small steps lead to big achievements.</h3>
+                <p>Stay consistent. Your future self will thank you.</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>Made with ♥ using HTML, CSS & JavaScript</p>
+            <p>© 2026 TaskFlow</p>
+        </footer>
+    
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

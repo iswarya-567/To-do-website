@@ -1,0 +1,460 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background: linear-gradient(
+        135deg,
+        #f8f6ff 0%,
+        #f2effb 50%,
+        #fdf5f8 100%
+    );
+    color: #25213a;
+    min-height: 100vh;
+}
+
+
+.navbar {
+    height: 75px;
+    padding: 0 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    border-bottom: 1px solid #eeebf5;
+}
+
+.logo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 23px;
+    font-weight: 700;
+    color: #6548c8;
+    text-decoration: none;
+}
+
+.nav-tag {
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #89839e;
+    font-weight: 700;
+}
+
+.container {
+    width: 100%;
+    max-width: 1050px;
+    margin: 30px auto;
+    padding: 45px 35px;
+    background: rgba(255, 255, 255, 0.45);
+    border-radius: 30px;
+    box-shadow: 0 10px 35px rgba(90, 70, 130, 0.06);
+}
+
+.hero {
+    background: linear-gradient(
+        120deg,
+        #e8e1fa,
+        #dcd3f5,
+        #f1e5f5
+    );
+    color: #352957;
+}
+.eyebrow {
+    color: #a99ae6;
+    font-size: 11px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    margin-bottom: 13px;
+}
+
+.hero h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 46px;
+    line-height: 1.15;
+}
+
+.hero h1 span {
+    color: #c7b9ff;
+}
+
+.hero-text {
+    color: #655a7c;
+}
+
+.hero h1 span {
+    color: #8065c9;
+}
+
+.hero .eyebrow {
+    color: #8065c9;
+}
+
+.hero-button {
+    background: #ffffff;
+    color: #674dc0;
+}
+
+.hero-button {
+    display: inline-block;
+    background: white;
+    color: #503a9c;
+    padding: 12px 20px;
+    border-radius: 9px;
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.hero-button:hover {
+    transform: translateY(-3px);
+    background: #eae4ff;
+}
+
+.hero-image img {
+    width: 210px;
+    height: 190px;
+    object-fit: contain;
+    border-radius: 18px;
+}
+
+.task-section {
+    padding: 65px 0 35px;
+}
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 22px;
+}
+
+.section-heading h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+}
+
+.section-heading h2 span {
+    color: #8065d5;
+}
+
+.subheading {
+    color: #89839e;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.date-badge {
+    background: white;
+    padding: 11px 16px;
+    border-radius: 10px;
+    color: #6548c8;
+    font-size: 12px;
+    font-weight: 700;
+    box-shadow: 0 4px 15px #30205b0b;
+}
+
+/* Medium-sized task card */
+.todo-card {
+    max-width: 680px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 27px;
+    background: white;
+    border: 1px solid #eeeaf7;
+    border-radius: 19px;
+    box-shadow: 0 12px 35px rgba(55, 39, 103, 0.08);
+}
+
+.card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 23px;
+}
+
+.card-top h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+.card-top p {
+    color: #9992a8;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+.task-icon {
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    border-radius: 12px;
+    background: #eee9ff;
+    color: #6548c8;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.input-area {
+    display: flex;
+    gap: 10px;
+}
+
+.input-area input {
+    flex: 1;
+    min-width: 0;
+    padding: 14px;
+    border: 1px solid #e9e5f1;
+    border-radius: 9px;
+    outline: none;
+    font-size: 13px;
+    font-family: inherit;
+    background: #faf9fd;
+}
+
+.input-area input:focus {
+    border-color: #8065d5;
+    box-shadow: 0 0 0 3px #8065d51a;
+}
+
+.input-area button {
+    border: none;
+    background: #674dc0;
+    color: white;
+    padding: 0 19px;
+    border-radius: 9px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.input-area button:hover {
+    background: #4f399e;
+    transform: translateY(-2px);
+}
+
+.progress-area {
+    margin: 25px 0 19px;
+}
+
+.progress-label {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #777187;
+    margin-bottom: 9px;
+}
+
+#progress-text {
+    color: #6548c8;
+    font-weight: 700;
+}
+
+.progress-track {
+    height: 8px;
+    background: #eeeaf6;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(90deg, #8065d5, #b39cf7);
+    border-radius: 20px;
+    transition: width 0.3s ease;
+}
+
+.task-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 13px;
+    background: #faf9fd;
+    border: 1px solid #f0edf6;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+.task-item:hover {
+    border-color: #cfc3f2;
+    transform: translateX(3px);
+}
+
+.task-item input {
+    accent-color: #674dc0;
+    width: 17px;
+    height: 17px;
+    cursor: pointer;
+}
+
+.task-name {
+    flex: 1;
+    font-size: 13px;
+    overflow-wrap: anywhere;
+}
+
+.task-item.completed .task-name {
+    text-decoration: line-through;
+    color: #aaa4b4;
+}
+
+.delete-btn {
+    border: none;
+    background: #fff0f0;
+    color: #d65d68;
+    padding: 7px 10px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.delete-btn:hover {
+    background: #ffdddd;
+}
+
+.empty-message {
+    text-align: center;
+    color: #aaa3b7;
+    font-size: 13px;
+    padding: 25px 5px;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #f0edf6;
+    padding-top: 17px;
+    margin-top: 15px;
+    font-size: 12px;
+    color: #91899f;
+}
+
+.card-footer button {
+    border: none;
+    background: transparent;
+    color: #674dc0;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.quote-section {
+    margin: 55px 0 20px;
+    background: white;
+    padding: 18px;
+    display: flex;
+    gap: 22px;
+    align-items: center;
+    border-radius: 17px;
+    box-shadow: 0 6px 25px #30205b0a;
+}
+
+.quote-section img {
+    width: 145px;
+    height: 115px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.quote-section h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    margin-bottom: 7px;
+}
+
+.quote-section p:last-child {
+    color: #8e879e;
+    font-size: 13px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 25px 0 5px;
+    color: #9992a8;
+    font-size: 11px;
+}
+
+/* Mobile responsive design */
+@media (max-width: 650px) {
+    .navbar {
+        padding: 0 6%;
+    }
+
+    .container {
+        padding: 25px 16px;
+    }
+
+    .hero {
+        padding: 30px 24px;
+        min-height: 250px;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .hero-image img {
+        width: 110px;
+        height: 120px;
+    }
+
+    .section-heading h2 {
+        font-size: 23px;
+    }
+
+    .todo-card {
+        padding: 19px;
+    }
+
+    .input-area {
+        flex-direction: column;
+    }
+
+    .input-area button {
+        padding: 13px;
+    }
+
+    .quote-section img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .quote-section h3 {
+        font-size: 14px;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 380px) {
+    .hero-image img {
+        display: none;
+    }
+
+    .date-badge {
+        font-size: 10px;
+        padding: 8px;
+    }
+}
